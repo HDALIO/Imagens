@@ -7,9 +7,15 @@
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
   <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
   <style>
-    body{font-family:system-ui,Arial,sans-serif;max-width:1000px;margin:24px auto;padding:0 16px}
-    h2{margin:24px 0 8px}
-    .jx{margin-bottom:32px}
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      max-width: 1000px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+    h1 { margin-bottom: 32px; text-align: center; }
+    h2 { margin: 24px 0 8px; }
+    .jx { margin-bottom: 40px; }
   </style>
 </head>
 <body>
@@ -23,14 +29,14 @@
 
   <script>
     new juxtapose.JXSlider('#slider-leao', [
-      { src: 'https://hdalio.github.io/Imagens/LION_ANTES.jpg',  label: 'Antes'  },
-      { src: 'https://hdalio.github.io/Imagens/LION_DEPOIS.jpg', label: 'Depois' }
-    ], { animate:true, showLabels:true, startingPosition:'50%', makeResponsive:true });
+      { src: 'https://hdalio.github.io/Imagens/LION_ANTES.jpg' },
+      { src: 'https://hdalio.github.io/Imagens/LION_DEPOIS.jpg' }
+    ], { animate:true, showLabels:false, startingPosition:'50%', makeResponsive:true });
 
     new juxtapose.JXSlider('#slider-urso', [
-      { src: 'https://hdalio.github.io/Imagens/URSO_ANTES.jpg',  label: 'Antes'  },
-      { src: 'https://hdalio.github.io/Imagens/URSO_DEPOIS.jpg', label: 'Depois' }
-    ], { animate:true, showLabels:true, startingPosition:'50%', makeResponsive:true });
+      { src: 'https://hdalio.github.io/Imagens/URSO_ANTES.jpg' },
+      { src: 'https://hdalio.github.io/Imagens/URSO_DEPOIS.jpg' }
+    ], { animate:true, showLabels:false, startingPosition:'50%', makeResponsive:true });
   </script>
 </body>
 </html>
