@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comparações - JuxtaposeJS</title>
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+  <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+  <style>
+    body{font-family:system-ui,Arial,sans-serif;max-width:1000px;margin:24px auto;padding:0 16px}
+    h2{margin:24px 0 8px}
+    .jx{margin-bottom:32px}
+  </style>
+</head>
+<body>
+  <h1>Comparações</h1>
+
+  <h2>Leão</h2>
+  <div id="slider-leao" class="jx"></div>
+
+  <h2>Urso</h2>
+  <div id="slider-urso" class="jx"></div>
+
+  <script>
+    new juxtapose.JXSlider('#slider-leao', [
+      { src: 'https://hdalio.github.io/Imagens/LION_ANTES.jpg',  label: 'Antes'  },
+      { src: 'https://hdalio.github.io/Imagens/LION_DEPOIS.jpg', label: 'Depois' }
+    ], { animate:true, showLabels:true, startingPosition:'50%', makeResponsive:true });
+
+    new juxtapose.JXSlider('#slider-urso', [
+      { src: 'https://hdalio.github.io/Imagens/URSO_ANTES.jpg',  label: 'Antes'  },
+      { src: 'https://hdalio.github.io/Imagens/URSO_DEPOIS.jpg', label: 'Depois' }
+    ], { animate:true, showLabels:true, startingPosition:'50%', makeResponsive:true });
+  </script>
+</body>
+</html>
